@@ -1,0 +1,203 @@
+/* for common styles across all pages */
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+ 
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+ background-image: linear-gradient(
+      rgba(173, 216, 230, 0.4),  /* light blue overlay */
+      rgba(173, 216, 230, 0.4)
+    ),
+    url(../assets/images/student_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px rgba(73, 28, 236, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85); /* slight transparent white */
+  padding: 40px;
+  border-radius: 12px;
+
+}
+
+
+.logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  text-decoration: none;
+  background-color:#422fef;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6482ec;
+}
+
+/* Style for the form box */
+.form-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+/* Title */
+#title {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+/* Input Group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  background: #f0f4f8;
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin:15px 0;
+  max-height:65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+.input-field img {
+  margin-right: 10px;
+}
+
+.input-field input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  color: #333;
+}
+
+.toggle-icon {
+  cursor: pointer;
+}
+
+/* Button Field */
+.btn-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn-field button {
+  flex: 1;
+  padding: 10px;
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-field button.disable {
+  background-color: #b0c4de; /* light blue for disabled state */
+  cursor: not-allowed;
+}
+.btn-field button:hover {
+  background-color: #357ab8;
+}
+
+/* role.html */
+
+.role-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  padding: 20px;
+  border-radius: 20px;
+  width: 25%;
+ 
+}
+
+.logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.role-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #3818d9;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #746ace;
+  transform: scale(1.05);
+}
+ 

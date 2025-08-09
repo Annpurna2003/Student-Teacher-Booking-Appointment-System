@@ -1,0 +1,80 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/auth.js" type="module"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2 id="title">Register</h2>
+
+      <form>
+        <div class="input-group">
+          <div class="input-field" id="name-field">
+            <img src="../assets/images/user (2).svg" alt="Logo" width="20px" />
+            <input type="text" placeholder="Name" id="name" required />
+          </div>
+
+          <div class="input-field">
+            <img src="../assets/images/email (2).svg" alt="Logo" width="20px" />
+            <input type="email" placeholder="Email" id="email" required />
+          </div>
+
+          <div class="input-field">
+            <img src="../assets/images/password (2).svg" alt="password" width="20px" />
+            <input type="password" placeholder="Password" id="password" required />
+            <img src="../assets/images/eye.svg" alt="toggle visibility" id="togglePassword" width="20px" class="toggle-icon" />
+          </div>
+        </div>
+
+        <div class="btn-field">
+          <button type="button" id="register">Register</button>
+          <button type="button" id="login" class="disable">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toggle Form Mode Script -->
+  <script>
+    let register = document.getElementById("register");
+    let login = document.getElementById("login");
+    let nameField = document.getElementById("name-field");
+    let title = document.getElementById("title");
+
+    login.onclick = () => {
+      nameField.style.display = "none";
+      title.innerHTML = "Login";
+      register.classList.add("disable");
+      login.classList.remove("disable");
+    };
+
+    register.onclick = () => {
+      nameField.style.display = "flex";
+      title.innerHTML = "Register";
+      login.classList.add("disable");
+      register.classList.remove("disable");
+    };
+    // Toggle Password Visibility
+    const passwordInput=document.getElementById('password');
+const toggleIcon=document.getElementById('togglePassword');
+toggleIcon.addEventListener('click',()=>{
+    const isPasswordVisible=passwordInput.type === 'text';
+     
+    passwordInput.type = isPasswordVisible ? 'password' : 'text';
+    toggleIcon.src = isPasswordVisible 
+      ? 'assets/images/eyeslash.svg' 
+      : 'assets/images/eye.svg';
+  ;
+})
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+.form-main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f7f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Smaller wrapper */
+.appointment-form {
+  width: 100%;
+  max-width: 450px; /* Reduced from 600px */
+  background-color: #ffffff;
+  padding: 20px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Smaller heading */
+.form-main header h1 {
+  font-size: 30px; /* Was 28px or 15px */
+  margin-bottom: 20px;
+  color: #2c3e50;
+    margin-top: 30px;
+}
+
+/* Slightly reduced spacing */
+.form-group {
+  margin-bottom: 15px;
+  width:100%;
+}
+
+/* Label styling remains the same */
+.form-group label {
+  font-size: 14px;
+}
+
+/* Smaller input fields */
+.form-group input,
+.form-group select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Smaller submit button */
+#schedule {
+    width:100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  align-items: center;
+}
+/* searchteacher.html */
+/* student-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+} */
+
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.appointment-table th, .appointment-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.appointment-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.appointment-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-book {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #218838;
+}
+
+/* booking appointments by teacher */
+.bookedtable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bookedtable th,
+.bookedtable td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.bookedtable thead {
+  background-color: #1976d2;
+  color: #ffffff;
+}
+
+
+
+.bookedtable td:last-child {
+  text-align: center;
+}
+
+
+.bookedtable .action-btn {
+  padding: 6px 12px;
+  margin: 2px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* view appointments */
+.book.content {
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9fafe;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+
+.book.content h1 {
+  text-align: center;
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+
+
+#bookedtable {
+  width: 100%;
+  border-collapse: collapse; /* enable lines between rows and columns */
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+
+#bookedtable thead {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+
+
+#bookedtable thead th {
+  padding: 14px 16px;
+  font-weight: 600;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+
+#bookedtable tbody td {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+#bookedtable tbody tr:hover {
+  background-color: #f1f5ff;
+  transition: background-color 0.2s ease;
+}
+
+#bookedtable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#bookedtable td button {
+  background-color: #4f46e5;
+  border: none;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+
+#bookedtable td button:hover {
+  background-color: #3730a3;
+}

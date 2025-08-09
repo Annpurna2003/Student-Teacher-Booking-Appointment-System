@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manage Teachers</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+ 
+</head>
+<body>
+     <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <nav>
+        <ul class="sidebar-menu">
+          <li class="active">
+            <a href="dashboard.html">
+              <img src="../assets/images/house (2).svg" width="20px"> Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="../teacher/dashboard.html">
+              <img src="../assets/images/teacher (2).svg" width="20px"> Teachers
+            </a>
+          </li>
+          <li>
+            <a href="../student/dashboard.html">
+              <img src="../assets/images/students (2).svg" width="20px"> Students
+            </a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <img src="../assets/images/logout (2).svg" width="20px"> Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  <div class="teacher-container">
+    <header>
+      <h1>Manage Teachers</h1>
+    </header>
+
+ <table id="teacherTable" border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Subject</th>
+        <th>Email</th>
+          <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- New rows will be added here -->
+  </tbody>
+</table>
+
+<br>
+
+<input type="text" id="nameInput" placeholder="Name">
+<input type="text" id="deptInput" placeholder="Department">
+<input type="text" id="subjectInput" placeholder="Subject">
+<input type="email" id="emailInput" placeholder="Email">
+<button id="addTeacherBtn" type="button">Add Teacher</button>
+
+
+ 
+  </div>
+
+ <script type="module"src="../js/admin.js"></script>
+</body>
+</html>

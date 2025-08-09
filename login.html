@@ -1,0 +1,55 @@
+<!-- login page --><!-- for login page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script> -->
+<script src="js/auth.js" type="module" ></script>
+<body>
+    <div class="container">
+
+<div class="form-box">
+    <h2 id="title">Register</h2>
+    
+    <form>
+    <div class="input-group">
+
+        <!-- <label for ="role">Register as:</label>
+        <select id="role">
+            <option value="customer">Customer</option>
+            <option value="admin">Admin</option>
+        </select> -->
+
+<div class="input-field">
+   <img src="../assets/images/email (2).svg" alt="Logo" width="20px">
+    <input type="email" placeholder="Email" id="email" required>
+</div>
+<div class="input-field">
+  <img src="../assets/images/password (2).svg" alt="password" width="20px">
+    <input type="password" placeholder="Password" id="password"required>
+    <img src="assets/images/eye.svg" alt="toggle visibility" id="togglePassword" width="20px" class="toggle-icon">
+</div>
+        </div>
+    <div class="btn-field">
+    <button type="button" id="register" >Register</button>
+    <button type="button" id="login" >Login</button>
+</div>
+    </form>
+
+</div>
+
+
+
+
+    </div>
+ 
+
+    
+</body>
+</html>

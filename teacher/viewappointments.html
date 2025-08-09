@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Appointments</title>
+     <link rel="stylesheet" href="../css/student.css">
+     <link rel="stylesheet" href="../css/teacher.css">
+      <script type="module" src="../js/teacher.js"></script>
+     
+</head>
+<body>
+ <div class="student-container">
+      <!-- sidebar -->
+       <aside class="sidebar">
+      <h2>Contents</h2>
+      <nav>
+        <ul class="sidebar-menu">
+          <li class="active">
+            <a href="dashboard.html">
+              <img src="../assets/images/house (2).svg" width="20px"> Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="../teacher/dashboard.html">
+              <img src="../assets/images/teacher (2).svg" width="20px"> Teachers
+            </a>
+          </li>
+          <li>
+            <a href="../student/dashboard.html">
+              <img src="../assets/images/students (2).svg" width="20px"> Students
+            </a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <img src="../assets/images/logout (2).svg" width="20px"> Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+<!-- main content -->
+ <div class="book content">
+<h1>Booked Appointments By Students</h1>
+
+<br/>
+    <table id="bookedtable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Message</th>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Time</th>
+          <th>Actions</th>
+          
+        </tr>
+      </thead>
+      <tbody id="bookedtableBody">
+        <!-- Rows will be added here dynamically using JS -->
+      </tbody>
+    </table>
+ </div>
+
+
+ </div>  
+  
+ 
+</body>
+</html>

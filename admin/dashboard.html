@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <nav>
+        <ul class="sidebar-menu">
+          <li class="active">
+            <a href="dashboard.html">
+              <img src="../assets/images/house (2).svg" width="20px"> Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="../teacher/dashboard.html">
+              <img src="../assets/images/teacher (2).svg" width="20px"> Teachers
+            </a>
+          </li>
+          <li>
+            <a href="../student/dashboard.html">
+              <img src="../assets/images/students (2).svg" width="20px"> Students
+            </a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <img src="../assets/images/logout (2).svg" width="20px"> Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <header>
+        <h1>Welcome, Admin</h1>
+        <p>Here’s a quick overview of the system activity.</p>
+      </header>
+
+   
+
+      <!-- Quick Shortcuts -->
+      <section class="shortcuts">
+        <h2>Quick Actions</h2>
+        <div class="buttons">
+          <button onclick="location.href='add-teacher.html'">Manage Teachers</button>
+          <button onclick="location.href='manage-registrations.html'">Approve Students</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
