@@ -33,8 +33,8 @@ A web-based appointment scheduling system that allows students to book appointme
 ---
 
 
-How to run the project?
-In the firebase.js make sure you have the following configuration
+## How to Run the Project
+Configure Firebase by editing the firebase.js file. Make sure it contains the following:
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
