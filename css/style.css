@@ -195,9 +195,7 @@ p {
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .btn:hover {
   background-color: #746ace;
   transform: scale(1.05);
 }
- 

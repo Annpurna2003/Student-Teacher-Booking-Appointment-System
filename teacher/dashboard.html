@@ -6,8 +6,89 @@
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="../css/teacher.css">
+<script src="../js/teacher.js"></script>
+<style>/* ==================== */
+/* Main Content & Header Responsive */
+/* ==================== */
+
+@media (max-width: 1024px) {
+    .main {
+        padding: 20px 15px;
+    }
+
+    .main header h1 {
+        font-size: 2rem;
+    }
+
+    .main header p {
+        font-size: 1rem;
+    }
+
+    .shortcuts h2 {
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 15px 10px;
+    }
+
+    .main header h1 {
+        font-size: 1.7rem;
+    }
+
+    .main header p {
+        font-size: 0.95rem;
+    }
+
+    .shortcuts h2 {
+        font-size: 1.3rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 10px 8px;
+    }
+
+    .main header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main header p {
+        font-size: 0.9rem;
+    }
+
+    .shortcuts h2 {
+        font-size: 1.2rem;
+    }
+
+    .buttons button {
+        font-size: 0.95rem;
+        padding: 8px 10px;
+    }
+}
+</style>
 </head>
 <body>
+    <div class="hamburger" onclick="toggleMenu()">
+    <img src="../assets/images/hamburger.svg" width="20px" alt="Menu">
+</div>
   <div class="admin-container">
     <!-- Sidebar -->
     <aside class="sidebar">
@@ -44,10 +125,6 @@
         <h1>Welcome, Teacher</h1>
         <p>Here’s a quick overview of the system activity.</p>
       </header>
-
-      
-
-
       <!-- Quick Shortcuts -->
       <section class="shortcuts">
         <h2>Quick Actions</h2>
@@ -55,7 +132,6 @@
         <div class="buttons">
        <button onclick="location.href='appointments.html'">Schedule Appointments</button>
           <button onclick="location.href='viewappointments.html'">View Appointments</button>
-           
         </div>
       </section>
     </main>

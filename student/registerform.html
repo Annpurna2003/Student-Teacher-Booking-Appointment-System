@@ -5,9 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Dashboard</title>
   <link rel="stylesheet" href="../css/student.css">
- 
+ <style>@media (max-width: 1024px) {
+    .main {
+        padding: 25px 20px;
+    }
+
+    .main header h1 {
+        font-size: 1.8rem;
+    }
+
+    .main header p {
+        font-size: 0.95rem;
+    }
+
+    .form-container {
+        max-width: 500px;
+        padding: 20px 25px;
+    }
+
+    .form-container h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 20px 15px;
+    }
+
+    .main header h1 {
+        font-size: 1.6rem;
+    }
+
+    .main header p {
+        font-size: 0.9rem;
+    }
+
+    .form-container {
+        max-width: 100%;
+        padding: 15px 20px;
+    }
+
+    .form-container h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 15px 10px;
+    }
+
+    .main header h1 {
+        font-size: 1.4rem;
+    }
+
+    .main header p {
+        font-size: 0.85rem;
+    }
+
+    .form-container h3 {
+        font-size: 1.1rem;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea,
+    .form-container button {
+        font-size: 0.95rem;
+        padding: 8px 10px;
+    }
+}
+</style>
 </head>
 <body>
+    <div class="hamburger" onclick="toggleMenu()">
+    <img src="../assets/images/hamburger.svg" width="20px" alt="Menu">
+</div>
   <div class="student-container">
     <!-- sidebar -->
        <aside class="sidebar">
@@ -43,8 +117,6 @@
         <h1>Welcome, Students</h1>
         <p>Just a few quick details and you're ready to join your classroom</p>
       </header>
-
-
       <div class="form-container">
       <h3>Student Registration Form</h3>
       <form id="registrationForm">

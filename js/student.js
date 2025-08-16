@@ -97,3 +97,12 @@ if (!name||!sub||!date || !time ||!message ) {
   alert("Error adding Booking. Please try again.");
 }
 }
+
+function toggleMenu() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('show');
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', toggleMenu);
+});

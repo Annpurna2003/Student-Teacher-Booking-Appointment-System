@@ -5,15 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Role</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>@media (max-width: 768px) {
+    .role-heading {
+        font-size: 1.5rem;
+    }
+    .logo img {
+        max-width: 120px;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .role-heading {
+        font-size: 1.2rem;
+    }
+    .logo img {
+        max-width: 100px;
+    }
+    .btn {
+        font-size: 0.95rem;
+        padding: 8px 14px;
+    }
+    .buttons {
+        gap: 10px;
+    }
+    .role-box{
+      background: none;
+    }
+}</style>
 </head>
 <body>
 <div class="role-box">
   <div class="logo">
     <img src="../assets/images/logo.png" alt="Logo">
   </div>
-
   <h2 class="role-heading">Choose Your Role</h2>
-
   <div class="buttons">
     <a href="./admin/dashboard.html" class="btn">I am an Admin</a>
     <a href="./student/dashboard.html" class="btn">I am a Student</a>

@@ -121,3 +121,13 @@ window.deleteAppointment = async function (id) {
     console.error("Error rejecting appointment:", error);
   }
 };
+
+
+function toggleMenu() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('show');
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', toggleMenu);
+});

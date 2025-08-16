@@ -5,9 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Dashboard</title>
   <link rel="stylesheet" href="../css/student.css">
- 
+ <style>
+  @media (max-width: 1024px) {
+    .main {
+        padding: 15px 20px;
+    }
+
+    .main header h1 {
+        font-size: 1.8rem;
+    }
+
+    .main header p {
+        font-size: 0.95rem;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 12px 15px;
+    }
+
+    .main header h1 {
+        font-size: 1.6rem;
+    }
+
+    .main header p {
+        font-size: 0.9rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons .btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 10px 10px;
+    }
+
+    .main header h1 {
+        font-size: 1.4rem;
+    }
+
+    .main header p {
+        font-size: 0.85rem;
+    }
+
+    .buttons .btn {
+        font-size: 0.95rem;
+        padding: 8px 10px;
+    }
+}
+ </style>
 </head>
 <body>
+    <div class="hamburger" onclick="toggleMenu()">
+    <img src="../assets/images/hamburger.svg" width="20px" alt="Menu">
+</div>
   <div class="student-container">
     <!-- sidebar -->
        <aside class="sidebar">
@@ -50,8 +114,6 @@
     <a href="./book-appointments.html" class="btn">Book Appointment</a>
 
   </div>
-
-     
  </main>
   </div>
    <script type="module" src="../js/student.js"></script>

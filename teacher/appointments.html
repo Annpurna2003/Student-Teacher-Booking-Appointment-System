@@ -6,11 +6,13 @@
     <title>Schedule Appointments</title>
   <link rel="stylesheet" href="../css/teacher.css">
     <link rel="stylesheet" href="../css/admin.css">
-  
+  <script type="module" src="../js/teacher.js"></script>
         <!-- <link rel="stylesheet" href="../css/teacher.css"> -->
-
 </head>
 <body>
+    <div class="hamburger" onclick="toggleMenu()">
+    <img src="../assets/images/hamburger.svg" width="20px" alt="Menu">
+</div>
     <div class="admin-container">
          <!-- sidebar -->
        <aside class="sidebar">
@@ -66,15 +68,10 @@
 <label for="time">Time:</label>
  <input type="time" id="time" name="time" required>
 </div>
-
-            
-
 <div class="form-group">
             <label for="maxstudents">Max Number of Students:</br></label>
             <input type="number" id="maxstud" name="maxstud" required min="1">
 </div>
-
-
 <div class="form-group"><label for="meeting">Meeting</label>
         <select id="meeting" name="meeting" required>
           <option value="">-- Select Meeting Type --</option>
@@ -90,6 +87,5 @@
         </form>
      </main>
     </div>
-      <script type="module" src="../js/teacher.js"></script>
 </body>
 </html>

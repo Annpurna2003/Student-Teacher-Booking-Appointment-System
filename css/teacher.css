@@ -158,7 +158,7 @@
 
 #bookedtable {
   width: 100%;
-  border-collapse: collapse; /* enable lines between rows and columns */
+  border-collapse: collapse; 
   background-color: #fff;
   border: 1px solid #ccc;
 }
@@ -208,4 +208,58 @@
 
 #bookedtable td button:hover {
   background-color: #3730a3;
+}
+
+/* hamburger */
+/* Hamburger button */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+  border: none;
+  font-size: 26px; 
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* Sidebar default (desktop view) */
+.nav-links {
+  display: flex; /* visible by default on large screens */
+  gap: 20px;
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    display: none; /* hide initially */
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background: #2c3e50;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .sidebar.show {
+    display: flex; /* show on toggle */
+  }
+
+  .sidebar a {
+    margin: 15px 0;
+    color: white;
+    text-decoration: none;
+  }
 }
